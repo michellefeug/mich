@@ -5,73 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Michelle Feugueng | Virtual Assistant</title>
   <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; }
-    header { background:#2a2a72; color:#fff; padding:20px 0; text-align:center; }
-    nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; }
-    .hero { background:#f4f4f4; padding:60px; text-align:center; }
-    .hero h1 { font-size:2.5rem; margin-bottom:10px; }
-    section { padding:40px 20px; max-width:1000px; margin:auto; }
-    h2 { color:#2a2a72; margin-bottom:20px; }
-    .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
-    .card { background:#fff; padding:20px; border:1px solid #ddd; border-radius:8px; }
-    footer { background:#2a2a72; color:#fff; text-align:center; padding:20px; margin-top:40px; }
-    form { display:flex; flex-direction:column; max-width:500px; margin:auto; }
-    input, textarea { padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:5px; }
-    button { background:#2a2a72; color:#fff; border:none; padding:12px; border-radius:5px; cursor:pointer; }
-    button:hover { background:#4444aa; }
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #4f46e5;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #4f46e5;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .service {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .service:hover {
+      transform: translateY(-5px);
+    }
+    .service h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .cta a {
+      display: inline-block;
+      background: #4f46e5;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #4338ca;
+    }
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Michelle Feugueng</h1>
-    <p>Virtual Assistant | Helping You Work Smarter</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p>Your Virtual Assistant for Productivity & Growth</p>
   </header>
 
-  <section class="hero">
-    <h1>Efficient. Reliable. Organized.</h1>
-    <p>I help busy entrepreneurs and small businesses streamline their tasks so they can focus on growth.</p>
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I’m Michelle, your dedicated Virtual Assistant. With strong skills in organization, communication, and digital tools, I specialize in helping entrepreneurs, creators, and businesses manage their schedules, communications, and admin tasks. My goal is to give you back your time so you can focus on what matters most.</p>
-  </section>
-
-  <section id="services">
-    <h2>Services</h2>
+  <section>
+    <h2>My Services</h2>
     <div class="services">
-      <div class="card">
-        <h3>Admin Support</h3>
-        <p>Email management, data entry, scheduling, and organization.</p>
+      <div class="service">
+        <h3>📅 Calendar Management</h3>
+        <p>Keep your schedule organized and never miss a meeting again.</p>
       </div>
-      <div class="card">
-        <h3>Social Media</h3>
-        <p>Content scheduling, engagement, and basic design support.</p>
+      <div class="service">
+        <h3>📧 Email Management</h3>
+        <p>Clear your inbox clutter and let me handle your communications.</p>
       </div>
-      <div class="card">
-        <h3>Research & Assistance</h3>
-        <p>Market research, travel planning, and project coordination.</p>
+      <div class="service">
+        <h3>📱 Social Media Management</h3>
+        <p>Build engagement and consistency across your platforms.</p>
       </div>
+      <div class="service">
+        <h3>✍️ Content Writing</h3>
+        <p>Compelling blog posts, captions, and copy tailored to your brand.</p>
+      </div>
+      <div class="service">
+        <h3>🔎 Research</h3>
+        <p>Detailed insights and information gathering to support your business goals.</p>
+      </div>
+    </div>
+
+    <div class="cta">
+      <h2>Let’s Work Together!</h2>
+      <p>Email me today to discuss how I can support your business.</p>
+      <a href="mailto:michelle@example.com">Contact Me</a>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="How can I help you?" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
   <footer>
-    <p>&copy; 2025 Michelle Feugueng | Virtual Assistant</p>
+    <p>© 2025 Michelle Feugueng. All rights reserved.</p>
   </footer>
 </body>
 </html>
